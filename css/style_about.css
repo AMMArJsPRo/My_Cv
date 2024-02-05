@@ -1,0 +1,843 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+}
+
+:root {
+    --main-color: #227aff;
+    --hover-color: #0052cc;
+    --transtion: 0.3s ease
+}
+
+body {
+    font-family: 'Poppins'
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.title {
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+section{
+    width: 100%;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.title span {
+    border-bottom: 2px solid var(--main-color);
+}
+
+/* --------------------------------------------------------------------------------- */
+
+header {
+    width: 100%;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 1100px;
+    height: 100%;
+}
+
+.about-content .text {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.about-content img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.about-content .text p {
+    font-size: 15px;
+    line-height: 1.8rem;
+    font-weight: 500;
+    height: 400px;
+    overflow: auto;
+}
+
+.about-content .text .btn {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 5px;
+    padding: 2px;
+    background: var(--main-color);
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 50px;
+    width: 150px;
+    transition: var(--transtion);
+    border: 2px solid transparent;
+    text-align: center;
+}
+
+.about-content .text .btn:hover {
+    color: var(--hover-color);
+    border: 2px solid var(--hover-color);
+    background: none;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.certificates img {
+    width: 450px;
+}
+
+.certificates .content {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 1100px;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.certificates .content .row {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.certificates .content .row .cert {
+    margin-bottom: 50px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.certificates .content .row .cert:hover {
+    transform: scale(1.1);
+}
+
+.certificates .content .row p {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+}
+
+.certificates .content .row p span {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+footer {
+    padding: 15px;
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+.content .row {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+}
+
+.content .row nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .row nav .logo {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.content .row nav ul {
+    display: flex;
+}
+
+.content .row nav ul li {
+    padding-left: 20px;
+}
+
+.content .row nav ul li a {
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.content .row p,a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.experience {
+    width: 100%;
+}
+
+.experience .content {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 1100px;
+    height: 100%;
+}
+
+.experience .content .row {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    grid-template-columns: 2fr 1fr
+}
+
+.experience .content .row img {
+    width: 500px;
+}
+
+.experience .content .row p {
+    text-align: left;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.experience .skills {
+    width: 100%;
+}
+
+.experience .skills .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1100px;
+    height: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.experience .skills .content .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.experience .skills .content .skill p {
+    text-transform: uppercase;
+    margin: 5px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.experience .skills .content .skill .progressbar {
+    width: 500px;
+    height: 20px;
+    background: #e7e7e7;
+    border-radius: 50px;
+}
+
+.experience .skills .content .skill .progressbar span {
+    height: 20px;
+    background: var(--main-color);
+    display: inline-block;
+    border-radius: 50px;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+    header .about-content .text {
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+    
+    header .about-content img {
+        width: 250px;
+        margin: auto;
+    }
+    
+    header .about-content .text p {
+        padding: 1rem 3rem;
+        font-size: 13px;
+        width: 100%;
+        line-height: 1.5rem;
+    }
+
+    .about-content .text .btn {
+        font-size: 12px;
+        width: 120px;
+    }
+
+    .certificates .content {
+        margin-bottom: 30px;
+    }
+
+    .certificates .content .row {
+        grid-template-columns: 1fr;
+    }
+
+    .certificates .content img {
+        width: 300px;
+    }
+
+    .experience .content {
+        padding: 0 1rem;
+    }
+
+    .experience .content .row {
+        margin-top: 50px;
+    }
+
+    .experience .content .row {
+        grid-template-columns: 1fr;
+    }
+
+    .experience .content .row p {
+        font-size: 12px;
+        line-height: 1.5rem;
+        padding: 1rem 3rem;
+        height: 250px;
+        overflow: auto;
+    }
+
+    .experience .content .row img {
+        margin-top: 50px;
+        margin: auto;
+        width: 400px;
+        margin-top: 10px;
+        padding: 1rem 3rem;
+    }
+
+    .certificates .content .row .cert p {
+        font-size: 15px;
+    }
+
+    .experience .skills {
+        margin-bottom: 100px;
+    }
+
+    .experience .skills .content .skill p {
+        font-size: 15px;
+    }
+
+    .experience .skills .content .skill .progressbar {
+        width: 400px;
+        height: 20px;
+    }
+
+    .experience .skills .content .skill .progressbar span {
+        width: 250px;
+        height: 20px;
+    }
+
+    footer .content .row {
+        grid-template-columns: 1fr;
+    }
+
+    footer .content .row nav ul {
+        margin-right: 5px;
+    }
+
+    footer .content .row nav ul li {
+        padding-left: 10px;
+    }
+    
+    footer .content .row nav a {
+        display: inline-block;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    footer .content .row p {
+        font-size: 15px;
+    }
+
+    .about-content .text .btn {
+        padding: 2px;
+        margin-left: 5px;
+    }
+}
+
+/* --------------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    header .about-content .text {
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+    
+    header .about-content img {
+        width: 250px;
+        margin: auto;
+    }
+    
+    header .about-content .text p {
+        padding: 1rem 3rem;
+        font-size: 13px;
+        width: 100%;
+        line-height: 1.5rem;
+    }
+
+    .about-content .text .btn {
+        font-size: 12px;
+        width: 120px;
+    }
+
+    .certificates .content {
+        margin-bottom: 30px;
+    }
+
+    .certificates .content .row {
+        grid-template-columns: 1fr;
+    }
+
+    .certificates .content img {
+        width: 300px;
+    }
+
+    .experience .content {
+        padding: 0 1rem;
+    }
+
+    .experience .content .row {
+        margin-top: 50px;
+    }
+
+    .experience .content .row {
+        grid-template-columns: 1fr;
+    }
+
+    .experience .content .row p {
+        font-size: 12px;
+        line-height: 1.5rem;
+        padding: 1rem 3rem;
+        height: 250px;
+        overflow: auto;
+    }
+
+    .experience .content .row img {
+        margin-top: 50px;
+        margin: auto;
+        width: 400px;
+        margin-top: 10px;
+        padding: 1rem 3rem;
+    }
+
+    .certificates .content .row .cert p {
+        font-size: 15px;
+    }
+
+    .experience .skills {
+        margin-bottom: 100px;
+    }
+
+    .experience .skills .content .skill p {
+        font-size: 15px;
+    }
+
+    .experience .skills .content .skill .progressbar {
+        width: 400px;
+        height: 20px;
+    }
+
+    .experience .skills .content .skill .progressbar span {
+        width: 250px;
+        height: 20px;
+    }
+
+    footer .content .row {
+        grid-template-columns: 1fr;
+    }
+
+    footer .content .row nav ul {
+        margin-right: 5px;
+    }
+
+    footer .content .row nav ul li {
+        padding-left: 10px;
+    }
+    
+    footer .content .row nav a {
+        display: inline-block;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    footer .content .row p {
+        font-size: 15px;
+    }
+
+    .about-content .text .btn {
+        padding: 2px;
+    }
+}
+
+/* --------------------------------------------------------------------------------- */
+
+@media (max-width: 425px) {
+    header .about-content .text {
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+    
+    header .about-content img {
+        width: 400px;
+        padding: 1rem 3rem;
+    }
+    
+    header .about-content .text p {
+        padding: 0rem 2rem;
+        font-size: 13px;
+        width: 100%;
+        line-height: 1.8rem;
+        margin-top: 20px;
+    }
+
+    .about-content .text .btn {
+        font-size: 12px;
+        width: 120px;
+    }
+
+    .certificates .content {
+        margin-bottom: 30px;
+    }
+
+    .certificates .content .row {
+        grid-template-columns: 1fr;
+    }
+
+    .certificates .content img {
+        width: 300px;
+    }
+
+    .experience .content {
+        padding: 0 1rem;
+    }
+
+    .experience .content .row {
+        margin-top: 50px;
+    }
+
+    .experience .content .row {
+        grid-template-columns: 1fr;
+    }
+
+    .experience .content .row p {
+        font-size: 12px;
+    }
+
+    .experience .content .row img {
+        width: 400px;
+        margin-top: 30px;
+        padding: 1rem 3rem;
+    }
+
+    .certificates .content .row .cert p {
+        font-size: 15px;
+    }
+
+    .experience .skills {
+        margin-bottom: 70px;
+    }
+
+    .experience .skills .content .skill p {
+        font-size: 15px;
+    }
+
+    .experience .skills .content .skill .progressbar {
+        width: 250px;
+        height: 20px;
+    }
+
+    .experience .skills .content .skill .progressbar span {
+        width: 250px;
+        height: 20px;
+    }
+
+    footer .content .row {
+        grid-template-columns: 1fr;
+    }
+
+    footer .content .row nav ul {
+        margin-right: 5px;
+    }
+
+    footer .content .row nav ul li {
+        padding-left: 10px;
+    }
+    
+    footer .content .row nav a {
+        display: inline-block;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    footer .content .row p {
+        font-size: 15px;
+    }
+    
+    .about-content .text .btn {
+        padding: 2px;
+        margin-left: 5px;
+    }
+}
+
+/* --------------------------------------------------------------------------------- */
+
+@media (max-width: 375px) {
+    header .about-content .text {
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+    
+    header .about-content img {
+        width: 350px;
+    }
+    
+    header .about-content .text p {
+        padding: 0rem 2rem;
+        font-size: 13px;
+        width: 100%;
+        line-height: 1.8rem;
+        margin-top: 20px;
+    }
+
+    .about-content .text .btn {
+        font-size: 12px;
+        width: 120px;
+    }
+
+    .certificates .content {
+        margin-bottom: 30px;
+    }
+
+    .certificates .content .row {
+        grid-template-columns: 1fr;
+    }
+
+    .certificates .content img {
+        width: 300px;
+    }
+
+    .experience .content {
+        padding: 0 1rem;
+    }
+
+    .experience .content .row {
+        margin-top: 50px;
+    }
+
+    .experience .content .row {
+        grid-template-columns: 1fr;
+    }
+
+    .experience .content .row p {
+        font-size: 12px;
+    }
+
+    .experience .content .row img {
+        width: 350px;
+        margin-top: 30px;
+        padding: 1rem 3rem;
+    }
+
+    .certificates .content .row .cert p {
+        font-size: 15px;
+    }
+
+    .experience .skills {
+        margin-bottom: 70px;
+    }
+
+    .experience .skills .content .skill p {
+        font-size: 15px;
+    }
+
+    .experience .skills .content .skill .progressbar {
+        width: 250px;
+        height: 20px;
+    }
+
+    .experience .skills .content .skill .progressbar span {
+        width: 250px;
+        height: 20px;
+    }
+
+    footer .content .row {
+        grid-template-columns: 1fr;
+    }
+
+    footer .content .row nav ul {
+        margin-right: 5px;
+    }
+
+    footer .content .row nav ul li {
+        padding-left: 10px;
+    }
+    
+    footer .content .row nav a {
+        display: inline-block;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    footer .content .row p {
+        font-size: 15px;
+    }
+
+    .about-content .text .btn {
+        padding: 2px;
+    }
+}
+
+/* --------------------------------------------------------------------------------- */
+
+
+@media (max-width: 320px) {
+    header .about-content .text {
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+    
+    header .about-content img {
+        width: 300px;
+    }
+    
+    header .about-content .text p {
+        padding: 0rem 2rem;
+        font-size: 13px;
+        width: 100%;
+        line-height: 1.8rem;
+        margin-top: 20px;
+    }
+
+    .about-content .text .btn {
+        font-size: 12px;
+        width: 120px;
+    }
+
+    .certificates .content {
+        margin-bottom: 30px;
+    }
+
+    .certificates .content .row {
+        grid-template-columns: 1fr;
+    }
+
+    .certificates .content img {
+        width: 250px;
+    }
+
+    .experience .content {
+        padding: 0 1rem;
+    }
+
+    .experience .content .row {
+        margin-top: 50px;
+    }
+
+    .experience .content .row {
+        grid-template-columns: 1fr;
+    }
+
+    .experience .content .row p {
+        font-size: 12px;
+    }
+
+    .experience .content .row img {
+        width: 300px;
+        margin-top: 30px;
+        padding: 1rem 3rem;
+    }
+
+    .certificates .content .row .cert p {
+        font-size: 15px;
+    }
+
+    .experience .skills {
+        margin-bottom: 70px;
+    }
+
+    .experience .skills .content .skill p {
+        font-size: 15px;
+    }
+
+    .experience .skills .content .skill .progressbar {
+        width: 250px;
+        height: 20px;
+    }
+
+    .experience .skills .content .skill .progressbar span {
+        width: 250px;
+        height: 20px;
+    }
+
+    footer .content .row {
+        grid-template-columns: 1fr;
+    }
+
+    footer .content .row nav ul {
+        margin-right: 5px;
+    }
+
+    footer .content .row nav ul li {
+        padding-left: 10px;
+    }
+    
+    footer .content .row nav a {
+        display: inline-block;
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+    footer .content .row p {
+        font-size: 13px;
+    }
+
+    .about-content .text .btn {
+        padding: 2px;
+        margin-left: 5px;
+    }
+}

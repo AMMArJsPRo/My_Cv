@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+}
+
+:root {
+    --main-color: #227aff;
+    --hover-color: #0052cc;
+    --transtion: 0.3s ease
+}
+
+body {
+    font-family: 'Poppins'
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.title {
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+span {
+    color: var(--main-color);
+}
+
+/* -------------------------------------------------------------------------- */
+
+header {
+    width: 100%;
+    height: 100vb;
+    background: url(/imgs/university.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header .overlay {
+    width: 100%;
+    height: 100vb;
+    background-color: #000000cb;
+}
+
+header .overlay .navbar {
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    transition: var(--transtion);
+}
+
+header .overlay .navbar nav {
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 1.5rem 2rem;
+}
+
+header .overlay .navbar.scroll {
+    background: #fff;
+    box-shadow: 0 0 5px #424242b6;
+}
+
+header .overlay .navbar.scroll .links ul li a{
+    color: #000;
+}
+
+header .overlay .navbar.scroll .logo {
+    color: #000;
+}
+
+header .overlay .navbar nav .logo {
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+header .overlay .navbar nav .links ul {
+    display: flex;
+}
+
+header .overlay .navbar nav .links ul li {
+    padding-left: 30px;
+}
+
+header .overlay .navbar nav .links ul li a {
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: var(--transtion);
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+}
+
+header .overlay .navbar nav .links ul li a:hover {
+    color: var(--hover-color);
+}
+
+header .overlay .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1100px;
+    height: 100%;
+}
+
+header .header-content .text {
+    width: 1100px;
+    text-align: center;
+}
+
+header .header-content .text p {
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+header .header-content .text p span {
+    color: #fff;
+    background: var(--hover-color);
+    padding: 7px;
+    border-radius: 50%;
+}
+
+header .header-content .text h1 span {
+    text-transform: uppercase;
+    color: var(--main-color);
+    padding: 5px;
+    font-size: 35px;
+}
+
+header .header-content .text .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px;
+    background: var(--hover-color);
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 50px;
+    width: 110px;
+    transition: var(--transtion);
+    border: 2px solid transparent;
+}
+
+header .header-content .text .btn:hover {
+    color: var(--hover-color);
+    border: 2px solid var(--hover-color);
+    background: none;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.contact {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    width: 100%;
+}
+
+.container .row {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+}
+
+.container .row .card {
+    height: 200px;
+    padding: 15px;
+    box-shadow: 0 0 5px #5a5a5aaf;
+    border-radius: 10px;
+}
+
+.container .row .card .icon {
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+.container .row .card h2 {
+    text-transform: uppercase;
+}
+
+.container .row .card p {
+    color: #333333;
+    margin-top: 5px;
+}
+
+.container .row .card p.c2 {
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+/* -------------------------------------------------------------------------- */
+
+footer {
+    padding: 15px;
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+.content .row {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+}
+
+.content .row nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .row nav .logo {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.content .row nav ul {
+    display: flex;
+}
+
+.content .row nav ul li {
+    padding-left: 20px;
+}
+
+.content .row nav ul li a {
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.content .row p,a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    .container .row {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+    footer .content .row nav {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    footer .content .row nav .logo {
+        font-size: 23px;
+        margin-right: 5px;
+    }
+
+    footer .content .row nav ul {
+        margin-right: 5px;
+    }
+
+    footer .content .row nav ul li {
+        padding-left: 10px;
+    }
+    
+    footer .content .row nav a {
+        display: inline-block;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    footer .content .row p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    header .overlay .navbar nav {
+        flex-direction: column;
+    }
+
+    header .overlay .navbar nav .logo {
+        font-size: 25px;
+        margin: auto;
+    }
+
+    header .overlay .navbar nav .links ul li {
+        padding-left: 15px;
+    }
+
+    header .overlay .navbar nav .links ul li a {
+        margin: auto;
+        font-size: 14px;
+    }
+
+    .container .row {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+    .container .row .card {
+        padding: 10px;
+        margin-bottom: 20px;
+        height: 170px;
+    }
+
+    .container .row .card .icon {
+        font-size: 30px;
+    }
+
+    .container .row .card h2 {
+        font-size: 18px;
+    }
+
+    .container .row .card p {
+        font-size: 13px;
+    }
+
+    header .header-content .text h1 span {
+        font-size: 23px;
+    }
+
+    header .header-content .text p {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    header .header-content .text a {
+        font-size: 12px;
+    }
+
+    footer .content .row {
+        grid-template-columns: 1fr;
+    }
+
+    footer .content .row nav {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    footer .content .row nav .logo {
+        font-size: 23px;
+        margin-top: 20px;
+        margin-right: 5px;
+    }
+
+    footer .content .row nav ul {
+        margin-right: 5px;
+    }
+
+    footer .content .row nav ul li {
+        padding-left: 10px;
+    }
+    
+    footer .content .row nav a {
+        display: inline-block;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    footer .content .row p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    header .overlay .navbar nav {
+        flex-direction: column;
+    }
+
+    header .overlay .navbar nav .logo {
+        font-size: 25px;
+        margin: auto;
+    }
+
+    header .overlay .navbar nav .links ul li {
+        padding-left: 15px;
+    }
+
+    header .overlay .navbar nav .links ul li a {
+        margin: auto;
+        font-size: 14px;
+    }
+
+    .container .row {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+    .container .row .card {
+        padding: 10px;
+        margin-bottom: 20px;
+        height: 170px;
+    }
+
+    .container .row .card .icon {
+        font-size: 30px;
+    }
+
+    .container .row .card h2 {
+        font-size: 18px;
+    }
+
+    .container .row .card p {
+        font-size: 13px;
+    }
+
+    header .header-content .text h1 span {
+        font-size: 23px;
+    }
+
+    header .header-content .text p {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    header .header-content .text a {
+        font-size: 12px;
+    }
+
+    footer .content .row {
+        grid-template-columns: 1fr;
+    }
+
+    footer .content .row nav {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    footer .content .row nav .logo {
+        font-size: 23px;
+        margin-top: 20px;
+        margin-right: 5px;
+    }
+
+    footer .content .row nav ul {
+        margin-right: 5px;
+    }
+
+    footer .content .row nav ul li {
+        padding-left: 10px;
+    }
+    
+    footer .content .row nav a {
+        display: inline-block;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    footer .content .row p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    header .overlay .navbar nav {
+        flex-direction: column;
+    }
+
+    header .overlay .navbar nav .logo {
+        font-size: 25px;
+        margin: auto;
+        font-weight: 700
+    }
+
+    header .overlay .navbar nav .links ul li {
+        padding-left: 15px;
+    }
+
+    header .overlay .navbar nav .links ul li a {
+        font-size: 14px;
+    }
+
+    .container .row {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+    .container .row .card {
+        padding: 10px;
+        margin-bottom: 20px;
+        height: 170px;
+    }
+
+    .container .row .card .icon {
+        font-size: 30px;
+    }
+
+    .container .row .card h2 {
+        font-size: 18px;
+    }
+
+    .container .row .card p {
+        font-size: 13px;
+    }
+
+    header .header-content .text h1 span {
+        font-size: 23px;
+    }
+
+    header .header-content .text p {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    header .header-content .text a {
+        font-size: 12px;
+    }
+
+    footer .content .row {
+        grid-template-columns: 1fr;
+    }
+
+    footer .content .row nav {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    footer .content .row nav .logo {
+        font-size: 23px;
+        margin-top: 20px;
+        margin-right: 5px;
+    }
+
+    footer .content .row nav ul {
+        margin-right: 5px;
+    }
+
+    footer .content .row nav ul li {
+        padding-left: 10px;
+    }
+    
+    footer .content .row nav a {
+        display: inline-block;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    footer .content .row p {
+        font-size: 13px;
+    }
+}

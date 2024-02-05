@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="/imgs/Profile.jpg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ammar Abdualrhman | Home</title>
+</head>
+<body>
+    <header id="home">
+        <div class="overlay">
+            <div class="navbar">
+                <nav class="scroll">
+                    <a href="#home" class="logo" data-aos="fade-right">ammar</a>
+                    <div class="links">
+                        <ul data-aos="fade-right">
+                            <li><a href="#home">home</a></li>
+                            <li><a href="#contact">contact</a></li>
+                            <li><a href="/html/about.html">about</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="header-content" data-aos="fade-right">
+                <div class="text">
+                    <p>Hi There , <span> I'm</span></p>
+                    <h1><span id="typed"></span></h1>
+                    <a href="/html/about.html" class="btn">about</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="card" data-aos="fade-right">
+                    <p class="icon"><i class="fa-solid fa-envelope"></i></p>
+                    <h2>email</h2>
+                    <p>ammar.2223039@stemsharkya.moe.edu.eg</p>
+                    <p class="c2">stem sharkya's offical email</p>
+                </div>
+                <div class="card" data-aos="fade-right">
+                    <p class="icon"><i class="fa-solid fa-phone"></i></p>
+                    <h2>phone number</h2>
+                    <p>+20 1151560544</p>
+                    <p class="c2">also for whatsapp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="content">
+            <div class="row">
+                <nav>
+                    <div class="links">
+                        <ul>
+                            <li><a href="#home">home</a></li>
+                            <li><a href="/html/about.html">about</a></li>
+                            <li><a href="#contact">contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <p>developed by <a href="">ammar</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ['AMMAR ABDUALRHMAN', 'FRONT-END DEVELOPER', "GRAPHIC DESIGNER"],
+            typeSpeed: 40,
+            backSpeed: 40,
+            loop: true 
+        });
+        AOS.init({
+            duration: 1500
+        });
+    </script>
+</body>
+</html>
